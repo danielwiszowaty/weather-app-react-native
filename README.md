@@ -29,9 +29,5 @@ Wymagane jedno z trzech: telefon, symulator Android, symulator iOS
 
 ## Zrzuty ekranu
 
-![Zdjecie 1](assets/screenshots/1.png)
-![Zdjecie 2](assets/screenshots/2.png)
-![Zdjecie 3](assets/screenshots/3.png)
-![Zdjecie 4](assets/screenshots/4.png)
-![Zdjecie 5](assets/screenshots/5.png)
+![Zdjecie 1](assets/screenshots/1.png) ![Zdjecie 2](assets/screenshots/2.png) ![Zdjecie 3](assets/screenshots/3.png) ![Zdjecie 4](assets/screenshots/4.png) ![Zdjecie 5](assets/screenshots/5.png)
 
