@@ -432,8 +432,8 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`5 Km`}</Text>
-            <Text style={styles.infoText}>Very bad</Text>
+            >{`Katowice`}</Text>
+            <Text style={styles.infoText}>Dobry</Text>
           </View>
           <View style={{ alignItems: "center", justifyContent: "center" }}>
             <LottieView
@@ -446,8 +446,8 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`10 Km`}</Text>
-            <Text style={styles.infoText}>Bad</Text>
+            >{`Gliwice`}</Text>
+            <Text style={styles.infoText}>OK</Text>
           </View>
           <View style={{ alignItems: "center", justifyContent: "center" }}>
             <LottieView
@@ -460,8 +460,8 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`22 Km`}</Text>
-            <Text style={styles.infoText}>Good</Text>
+            >{`Zabrze`}</Text>
+            <Text style={styles.infoText}>Moderate</Text>
           </View>
         </View>
       </ScrollView>
