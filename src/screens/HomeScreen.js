@@ -347,8 +347,8 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`${currentWeather?.vis_km}Km`}</Text>
-            <Text style={styles.infoText}>Visibility</Text>
+            >{`${currentWeather?.feelslike_c} °C`}</Text>
+            <Text style={styles.infoText}>Feels like</Text>
           </View>
           <View style={{ alignItems: "center", justifyContent: "center" }}>
             <LottieView
@@ -359,9 +359,25 @@ const HomeScreen = () => {
                 width: wp(50),
               }}
             />
-            <Text
-              style={styles.infoMainText}
-            >{`${currentWeather?.air_quality}`}</Text>
+            <Text style={styles.infoMainText}>
+            <Text style={styles.infoMainText}>
+            {(() => {
+              const airQualityIndex = weatherData[selectedCity]?.current?.air_quality["gb-defra-index"];
+              if (airQualityIndex >= 1 && airQualityIndex <= 3) {
+                return "Good";
+              } else if (airQualityIndex >= 4 && airQualityIndex <= 6) {
+                return "Moderate";
+              } else if (airQualityIndex >= 7 && airQualityIndex <= 9) {
+                return "Bad";
+              } else if (airQualityIndex === 10) {
+                return "Very Bad";
+              } else {
+                // Handle other cases if needed
+                return "Not Good";
+              }
+            })()}
+          </Text>
+            </Text>
             <Text style={styles.infoText}>Air Quality</Text>
           </View>
         </View>
@@ -397,6 +413,11 @@ const HomeScreen = () => {
             style={{ width: "100%", marginVertical: hp(16) }}
             showsHorizontalScrollIndicator={false}
           />
+        </View>
+        <View style={styles.summaryContainer}>
+          <Text style={styles.summaryText}>
+            Nearby air quality
+          </Text>
         </View>
         <View style={styles.infoContainer}>
 
