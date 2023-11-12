@@ -398,6 +398,51 @@ const HomeScreen = () => {
             showsHorizontalScrollIndicator={false}
           />
         </View>
+        <View style={styles.infoContainer}>
+
+          <View style={{ alignItems: "center", justifyContent: "center" }}>
+            <LottieView
+              autoPlay
+              source={require("../../assets/animation/locationAnimation.json")}
+              style={{
+                height: wp(50),
+                width: wp(50),
+              }}
+            />
+            <Text
+              style={styles.infoMainText}
+            >{`5 Km`}</Text>
+            <Text style={styles.infoText}>Very bad</Text>
+          </View>
+          <View style={{ alignItems: "center", justifyContent: "center" }}>
+            <LottieView
+              autoPlay
+              source={require("../../assets/animation/locationAnimation.json")}
+              style={{
+                height: wp(50),
+                width: wp(50),
+              }}
+            />
+            <Text
+              style={styles.infoMainText}
+            >{`10 Km`}</Text>
+            <Text style={styles.infoText}>Bad</Text>
+          </View>
+          <View style={{ alignItems: "center", justifyContent: "center" }}>
+            <LottieView
+              autoPlay
+              source={require("../../assets/animation/locationAnimation.json")}
+              style={{
+                height: wp(50),
+                width: wp(50),
+              }}
+            />
+            <Text
+              style={styles.infoMainText}
+            >{`22 Km`}</Text>
+            <Text style={styles.infoText}>Good</Text>
+          </View>
+        </View>
       </ScrollView>
       {isLoading && <Loader title="Removing City" />}
     </SafeAreaView>
