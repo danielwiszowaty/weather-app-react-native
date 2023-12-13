@@ -432,8 +432,24 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`Katowice`}</Text>
-            <Text style={styles.infoText}>Dobry</Text>
+            >{`${weatherData[1]?.location?.name}`}</Text>
+            <Text style={styles.infoText}>
+            {(() => {
+              const airQualityIndex = weatherData[1]?.current?.air_quality["gb-defra-index"];
+              if (airQualityIndex >= 1 && airQualityIndex <= 3) {
+                return "Good";
+              } else if (airQualityIndex >= 4 && airQualityIndex <= 6) {
+                return "Moderate";
+              } else if (airQualityIndex >= 7 && airQualityIndex <= 9) {
+                return "Bad";
+              } else if (airQualityIndex === 10) {
+                return "Very Bad";
+              } else {
+                // Handle other cases if needed
+                return "Not Good";
+              }
+            })()}
+            </Text>
           </View>
           <View style={{ alignItems: "center", justifyContent: "center" }}>
             <LottieView
@@ -446,8 +462,24 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`Gliwice`}</Text>
-            <Text style={styles.infoText}>OK</Text>
+            >{`${weatherData[2]?.location?.name}`}</Text>
+            <Text style={styles.infoText}>
+            {(() => {
+              const airQualityIndex = weatherData[2]?.current?.air_quality["gb-defra-index"];
+              if (airQualityIndex >= 1 && airQualityIndex <= 3) {
+                return "Good";
+              } else if (airQualityIndex >= 4 && airQualityIndex <= 6) {
+                return "Moderate";
+              } else if (airQualityIndex >= 7 && airQualityIndex <= 9) {
+                return "Bad";
+              } else if (airQualityIndex === 10) {
+                return "Very Bad";
+              } else {
+                // Handle other cases if needed
+                return "Not Good";
+              }
+            })()}
+            </Text>
           </View>
           <View style={{ alignItems: "center", justifyContent: "center" }}>
             <LottieView
@@ -460,8 +492,24 @@ const HomeScreen = () => {
             />
             <Text
               style={styles.infoMainText}
-            >{`Zabrze`}</Text>
-            <Text style={styles.infoText}>Moderate</Text>
+            >{`${weatherData[3]?.location?.name}`}</Text>
+            <Text style={styles.infoText}>
+            {(() => {
+              const airQualityIndex = weatherData[3]?.current?.air_quality["gb-defra-index"];
+              if (airQualityIndex >= 1 && airQualityIndex <= 3) {
+                return "Good";
+              } else if (airQualityIndex >= 4 && airQualityIndex <= 6) {
+                return "Moderate";
+              } else if (airQualityIndex >= 7 && airQualityIndex <= 9) {
+                return "Bad";
+              } else if (airQualityIndex === 10) {
+                return "Very Bad";
+              } else {
+                // Handle other cases if needed
+                return "Not Good";
+              }
+            })()}
+            </Text>
           </View>
         </View>
       </ScrollView>
