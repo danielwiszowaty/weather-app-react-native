@@ -1,4 +1,4 @@
-# Projekt UMPAnUMiW - Aplikacja pogodowa
+# Projekt React Native - Aplikacja pogodowa
 
 Aplikacja pogodowa o minimalistycznym i nowoczesnym interfejsie użytkownika, stworzona przy użyciu React Native Expo CLI. Umożliwia użytkownikom pobieranie bieżącej lokalizacji lub ręczne wprowadzenie nazwy miasta, aby sprawdzić prognozę pogody. Aplikacja obsługuje dodawanie i usuwanie wielu miast oraz dostarcza dane dotyczące prognozy godzinowej i 3-dniowej. Dzięki przyjaznemu dla użytkownika interfejsowi użytkownika i menu wysuwającemu umożliwiającemu łatwą nawigację między różnymi miastami, sprawia, że sprawdzanie pogody staje się przyjemnością.
 
